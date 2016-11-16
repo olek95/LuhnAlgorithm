@@ -25,7 +25,7 @@ public class LuhnAlgorithmFXMLController implements Initializable {
     private TextArea resultTextArea;
     @FXML
     private void checkButtonAction(ActionEvent event) {
-        byte[] bPersonalIdentityNumber = personalIdentityNumber.getText().getBytes(); 
+        byte[] bPersonalIdentityNumber = (personalIdentityNumber.getText() + "\n").getBytes(); // skok do nowego wiersza dodany aby zmieniało wiersz w przypadku zapisu do pliku
         int[] number = new int[11];
         for(int i = 0; i < 11; i++)
             number[i] = bPersonalIdentityNumber[i] - 48;
@@ -67,3 +67,4 @@ public class LuhnAlgorithmFXMLController implements Initializable {
         }
     }
 }
+
