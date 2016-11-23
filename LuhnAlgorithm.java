@@ -14,6 +14,7 @@ public class LuhnAlgorithm extends Application {
         
         Scene scene = new Scene(root);
         
+        stage.setResizable(false);
         stage.setTitle("Sprawdzanie poprawności PESEL");
         stage.setScene(scene);
         stage.show();
