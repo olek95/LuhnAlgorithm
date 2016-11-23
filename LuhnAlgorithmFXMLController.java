@@ -27,7 +27,7 @@ import javafx.scene.control.TextField;
  */
 public class LuhnAlgorithmFXMLController implements Initializable {
     @FXML
-    private Button checkButton, exitButton;
+    private Button exitButton;
     @FXML
     private TextField personalIdentityNumber;
     @FXML
