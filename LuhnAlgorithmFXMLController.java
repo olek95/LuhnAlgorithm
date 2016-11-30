@@ -22,7 +22,7 @@ import javafx.scene.control.TextField;
  * programem sprawdzającym poprawność numeru PESEL. Algorytm sprawdzający jest 
  * algorytmem Luhna z wagami 1, 3, 7, 9. Klasa jest zabezpieczona przed podawaniem 
  * złego formatu nr PESEL, a także posiada funkcję automatycznego zapisu poprawnych 
- * numerów do pliku "Wynik.txt" znajdującycm się w katalogu z programem. 
+ * numerów do pliku "Wynik.txt" znajdującym się w katalogu z programem. 
  * @author AleksanderSklorz
  */
 public class LuhnAlgorithmFXMLController implements Initializable {
@@ -42,7 +42,6 @@ public class LuhnAlgorithmFXMLController implements Initializable {
             for(int i = 0; i < 11; i++)
                 number[i] = bPersonalIdentityNumber[i] - 48;
             int sum = 0, k = 0; 
-            boolean parity = false;
             for(int i = 0; i < 10; i++){
                 int temp = number[i];
                 sum += temp * multipliers[k];
@@ -77,4 +76,3 @@ public class LuhnAlgorithmFXMLController implements Initializable {
         }
     }
 }
-
